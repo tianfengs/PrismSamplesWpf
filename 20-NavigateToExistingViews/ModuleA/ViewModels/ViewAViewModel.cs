@@ -29,6 +29,11 @@ namespace ModuleA.ViewModels
             PageViews++;
         }
 
+        /// <summary>
+        /// 当IsNavigationTarget(NavigationContext navigationContext)返回false的时候，则创建新的导航标签？？？
+        /// </summary>
+        /// <param name="navigationContext"></param>
+        /// <returns></returns>
         public bool IsNavigationTarget(NavigationContext navigationContext)
         {
             return PageViews / 3 != 1;

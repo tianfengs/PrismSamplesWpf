@@ -6,6 +6,9 @@ namespace BasicRegionNavigation.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
+        /// <summary>
+        /// RegionManager通过RequestNavigate方法来获取已经注册的Navigation并且绑定到Region上去。
+        /// </summary>
         private readonly IRegionManager _regionManager;
 
         private string _title = "Prism Unity Application";
