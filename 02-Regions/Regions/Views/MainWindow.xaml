@@ -1,0 +1,19 @@
+﻿<Window x:Class="Regions.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        Title="Shell" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" Grid.RowSpan="2" />
+        <StackPanel prism:RegionManager.RegionName="ContentResion2" Grid.RowSpan="2"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" >
+            <Button Content="Add ViewA" Width="100" Margin="10" VerticalAlignment="Top"  Click="Button_Click"/>
+            <Button Content="Active ViewA" Width="100" Margin="10" VerticalAlignment="Top" Click="Button_Click_1"/>
+            <Button Content="Deactive ViewA" Width="100" Margin="10" VerticalAlignment="Top" Click="Button_Click_2"/>
+        </StackPanel>
+    </Grid>
+</Window>
